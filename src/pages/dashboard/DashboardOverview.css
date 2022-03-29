@@ -1,0 +1,32 @@
+.dario-color {
+    color: #ff8021;
+}
+
+.center-settings {
+    position: relative;
+    left: 25%;
+}
+
+.notification-text {
+    color: #565656;
+    font-size: 20px;
+    margin: 15px 10px 0px 10px;
+}
+
+.notification-label {
+    margin-left: 20px;
+}
+
+.setting-title {
+    position: relative;
+    margin: 10px;
+    bottom: 6px;
+    font-size: 14px;
+}
+
+.sub-text {
+    font-size: 12px;
+    color: #979494;
+    margin-left: 10px;
+    margin-bottom: 24px;
+}

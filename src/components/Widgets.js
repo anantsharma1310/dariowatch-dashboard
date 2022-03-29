@@ -5,11 +5,13 @@ import { faAngleDown, faAngleUp, faChartArea, faChartBar, faChartLine, faFlagUsa
 import { faAngular, faBootstrap, faReact, faVuejs } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Card, Image, Button, ListGroup, ProgressBar } from '@themesberg/react-bootstrap';
 import { CircleChart, BarChart, SalesValueChart, SalesValueChartphone } from "./Charts";
+import renderHTML from 'react-render-html';
 
 import Profile1 from "../assets/img/team/profile-picture-1.jpg";
 import ProfileCover from "../assets/img/profile-cover.jpg";
 
 import teamMembers from "../data/teamMembers";
+import './Widgets.css';
 
 
 export const ProfileCardWidget = () => {
@@ -304,18 +306,19 @@ export const RankingWidget = () => {
 };
 
 export const SalesValueWidget = (props) => {
-  const { title, value, percentage } = props;
+  const { title, value, percentage, data, type } = props;
   const percentageIcon = percentage < 0 ? faAngleDown : faAngleUp;
   const percentageColor = percentage < 0 ? "text-danger" : "text-success";
+  console.log('props', props);
 
   return (
-    <Card className="bg-secondary-alt shadow-sm">
+    <Card className="bg-secondary-alt shadow-sm bg-color">
       <Card.Header className="d-flex flex-row align-items-center flex-0">
         <div className="d-block">
           <h5 className="fw-normal mb-2">
             {title}
           </h5>
-          <h3>${value}</h3>
+          <h3>{value}</h3>
           <small className="fw-bold mt-2">
             <span className="me-2">Yesterday</span>
             <FontAwesomeIcon icon={percentageIcon} className={`${percentageColor} me-1`} />
@@ -324,13 +327,16 @@ export const SalesValueWidget = (props) => {
             </span>
           </small>
         </div>
-        <div className="d-flex ms-auto">
+        {/* <div className="d-flex ms-auto">
           <Button variant="secondary" size="sm" className="me-2">Month</Button>
           <Button variant="primary" size="sm" className="me-3">Week</Button>
-        </div>
+        </div> */}
       </Card.Header>
       <Card.Body className="p-2">
-        <SalesValueChart />
+        { type === 'Line' ?
+        <SalesValueChart data={data} type={type} /> :
+        <BarChart labels={data.labels} series={data.series} /> }
+        
       </Card.Body>
     </Card>
   );
@@ -369,32 +375,12 @@ export const SalesValueWidgetPhone = (props) => {
   );
 };
 
-export const AcquisitionWidget = () => {
+export const AcquisitionWidget = ({ text, heading, className }) => {
   return (
     <Card border="light" className="shadow-sm">
       <Card.Body>
-        <h5>Acquisition</h5>
-        <p>Tells you where your visitors originated from, such as search engines, social networks or website referrals.</p>
-        <div className="d-block">
-          <div className="d-flex align-items-center pt-3 me-5">
-            <div className="icon icon-shape icon-sm icon-shape-danger rounded me-3">
-              <FontAwesomeIcon icon={faChartBar} />
-            </div>
-            <div className="d-block">
-              <label className="mb-0">Bounce Rate</label>
-              <h4 className="mb-0">33.50%</h4>
-            </div>
-          </div>
-          <div className="d-flex align-items-center pt-3">
-            <div className="icon icon-shape icon-sm icon-shape-quaternary rounded me-3">
-              <FontAwesomeIcon icon={faChartArea} />
-            </div>
-            <div className="d-block">
-              <label className="mb-0">Sessions</label>
-              <h4 className="mb-0">9,567</h4>
-            </div>
-          </div>
-        </div>
+        <h5 className={className}>{heading}</h5>
+        <p>{renderHTML(text)}</p>
       </Card.Body>
     </Card>
   );

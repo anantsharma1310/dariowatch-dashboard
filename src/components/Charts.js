@@ -3,25 +3,21 @@ import React from "react";
 import Chartist from "react-chartist";
 import ChartistTooltip from 'chartist-plugin-tooltips-updated';
 
-export const SalesValueChart = () => {
-  const data = {
-    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-    series: [[1, 2, 2, 3, 3, 4, 3]]
-  };
-
+export const SalesValueChart = ({ data, type }) => {
   const options = {
     low: 0,
     showArea: true,
     fullWidth: true,
     axisX: {
       position: 'end',
-      showGrid: true
+      showGrid: true,
+      showLabel: true,
     },
     axisY: {
       // On the y-axis start means left and end means right
       showGrid: false,
-      showLabel: false,
-      labelInterpolationFnc: value => `$${value / 1}k`
+      showLabel: true,
+      labelInterpolationFnc: value => value
     }
   };
 
@@ -29,10 +25,12 @@ export const SalesValueChart = () => {
     ChartistTooltip()
   ]
 
+  console.log({ data, type });
   return (
-    <Chartist data={data} options={{...options, plugins}} type="Line" className="ct-series-g ct-double-octave" />
+    <Chartist data={data} options={{...options, plugins}} type={type} className="ct-series-g ct-double-octave" />
   );
 };
+
 
 export const SalesValueChartphone = () => {
   const data = {
@@ -90,18 +88,20 @@ export const CircleChart = (props) => {
 };
 
 export const BarChart = (props) => {
-  const { labels = [], series = [], chartClassName = "ct-golden-section" } = props;
+  const { labels = [], series = []} = props;
   const data = { labels, series };
 
   const options = {
     low: 0,
     showArea: true,
+    height: '250px',
     axisX: {
-      position: 'end'
+      position: 'end',
+      showLabel: true,
     },
     axisY: {
       showGrid: false,
-      showLabel: false,
+      showLabel: true,
       offset: 0
     }
   };
@@ -111,6 +111,6 @@ export const BarChart = (props) => {
   ]
 
   return (
-    <Chartist data={data} options={{...options, plugins}} type="Bar" className={chartClassName} />
+    <Chartist data={data} options={{...options, plugins}} type="Bar" />
   );
 };

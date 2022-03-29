@@ -3,8 +3,8 @@
     stroke-width: 10px;
 }
 .ct-label {
-    fill: $body-color;
-    color: $body-color;
+    fill: #ff8021;
+    color: #ff8021;
     font-size: 0.75rem;
     margin-top: 6px;
     font-weight: $font-weight-bold;
@@ -32,8 +32,8 @@
 //Label color Fix for pie chart
 
 .ct-chart-pie .ct-label, .ct-chart-donut .ct-label {
-    color: #ffffff;
-    fill: #ffffff;
+    color: #ff8021;
+    fill: #ff8021;
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
 }

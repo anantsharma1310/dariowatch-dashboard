@@ -23,7 +23,7 @@ export default (props) => {
     <div>
       {showSettings ? (
         <Card className="theme-settings">
-          <Card.Body className="pt-4">
+          {/* <Card.Body className="pt-4">
             <Button className="theme-settings-close" variant="close" size="sm" aria-label="Close" onClick={() => { toggleSettings(false) }} />
             <div className="d-flex justify-content-between align-items-center mb-3">
               <p className="m-0 mb-1 me-3 fs-7">Made with open source <span role="img" aria-label="gratitude">💙</span></p>
@@ -51,16 +51,16 @@ export default (props) => {
               </Card.Link>
 
             </div>
-          </Card.Body>
+          </Card.Body> */}
         </Card>
       ) : (
         <Card className="theme-settings theme-settings-expand" onClick={() => { toggleSettings(true) }}>
-          <Card.Body className="p-3 py-2">
+          {/* <Card.Body className="p-3 py-2">
             <span className="fw-bold h6"><FontAwesomeIcon icon={faCogs} className="me-1 fs-7" /> Settings</span>
-          </Card.Body>
+          </Card.Body> */}
         </Card>
       )}
-      <footer className="footer section py-5">
+      {/* <footer className="footer section py-5">
         <Row>
           <Col xs={12} lg={6} className="mb-4 mb-lg-0">
             <p className="mb-0 text-center text-xl-left">
@@ -95,7 +95,7 @@ export default (props) => {
             </ul>
           </Col>
         </Row>
-      </footer>
+      </footer> */}
     </div>
   );
 };
