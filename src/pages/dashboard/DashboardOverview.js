@@ -6,7 +6,7 @@ import { faCashRegister, faChartLine, faCloudUploadAlt, faPlus, faRocket, faTask
 import { Col, Row, Button, Dropdown, ButtonGroup } from '@themesberg/react-bootstrap';
 import Toggle from 'react-toggle'
 
-import { CounterWidget, ProgressTrackWidget, BarChartWidget, TeamMembersWidget, RankingWidget, SalesValueWidget, SalesValueWidgetPhone, AcquisitionWidget } from "../../components/Widgets";
+import { CounterWidget, ProgressTrackWidget, BarChartWidget, TeamMembersWidget, RankingWidget, SalesValueWidget, SalesValueWidgetPhone, AcquisitionWidget, ProfileCardWidget } from "../../components/Widgets";
 import { PageVisitsTable } from "../../components/Tables";
 import { trafficShares, totalOrders } from "../../data/charts";
 import './DashboardOverview.css';
@@ -19,7 +19,7 @@ const GraphComponent = ({ type }) => (
   <Row className="justify-content-md-center">
   <Col xs={12} sm={6} xl={4} className="mb-4">
     <AcquisitionWidget
-        className="text-info"
+        className="dario-text"
         heading={mock[type].stats.header}
         text={mock[type].stats.text}
       />
@@ -72,9 +72,10 @@ const CardComponent = ({ type }) => (
   <Row className="justify-content-md-center">
     {mock[type].data.map(item => (
       <Col xs={12} sm={6} xl={4} className="mb-4">
-      <AcquisitionWidget
-          className="text-info"
+      <ProfileCardWidget
+          className="dario-text"
           heading={item.header}
+          name={item.name}
           text={item.text}
         />
       </Col>

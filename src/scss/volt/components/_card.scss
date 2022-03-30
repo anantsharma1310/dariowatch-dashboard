@@ -16,7 +16,7 @@
 
     .profile-cover{
         @include background-image(no-repeat, cover); 
-        height: 200px;
+        height: 125px;
     }
 
     @include media-breakpoint-up(lg) {

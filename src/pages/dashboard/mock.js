@@ -60,27 +60,33 @@ export default {
         title: 'LIFESTYLE SUGGESTIONS',    
         data: [
             {
-                header: 'Eating habits',
+                header: 'Eating Habits',
+                name: 'eating',
                 text: 'Eat a variety of vegetables, especially dark green, red, and orange vegetables (3 or more servings a day)'
             },
             {
-                header: 'Exercise plans',
+                header: 'Exercise Plans',
+                name: 'exercise',
                 text: 'Take the stairs instead of the elevator at work. Take the stairs instead of the elevator at work.'
             },
             {
-                header: 'Meditation plans',
+                header: 'Meditation Plans',
+                name: 'meditate',
                 text: 'Know Why You Want to Take Up Meditation. Know Why You Want to Take Up Meditation.'
             },
             {
-                header: 'Sleeping habits',
+                header: 'Sleeping Habits',
+                name: 'sleep',
                 text: 'Set a consistent sleep schedule. Go to bed at the same time and wake up at the same time.'
             },
             {
-                header: 'Work schedule',
+                header: 'Work Schedule',
+                name: 'work',
                 text: 'Stick to a routine. Stick to a routine. Stick to a routine. Stick to a routine. Stick to a routine.'
             },
             {
                 header: 'Socializing',
+                name: 'social',
                 text: 'Step out and talk to a colleague. Step out and talk to a colleague. Step out and talk to a colleague.'
             }
         ]

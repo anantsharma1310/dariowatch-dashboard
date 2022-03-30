@@ -1,3 +1,40 @@
 .bg-color {
     background-color: #fff;
 }
+
+.dario-text {
+    color: #ff8021;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.lifestyle-text-padding {
+    padding: 1rem 1rem 0.5rem 1rem !important;
+}
+
+.lifestyle-head {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: #fff;
+}
+
+.lifestyle-top-container {
+    position: relative;
+}
+
+.backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.5;
+}
+
+.lifestyle-card {
+    height: 250px;
+}

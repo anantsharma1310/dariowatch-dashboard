@@ -12,6 +12,7 @@ import { Routes } from "../routes";
 import ThemesbergLogo from "../assets/img/themesberg.svg";
 import Dario from "../assets/img/LogoWhite.png";
 import ProfilePicture from "../assets/img/team/profile-picture-3.jpg";
+import './Sidebar.css';
 
 export default (props = {}) => {
   const location = useLocation();
@@ -47,9 +48,8 @@ export default (props = {}) => {
   const NavItem = (props) => {
     const { title, link, external, target, icon, image, badgeText, badgeBg = "secondary", badgeColor = "primary" } = props;
     const classNames = badgeText ? "d-flex justify-content-start align-items-center justify-content-between" : "";
-    const navItemClassName = link === pathname ? "active" : "";
+    const navItemClassName = (link === pathname && title !== 'Dariowatch Dashboard') ? "active nav-item-width" : "nav-item-width";
     const linkProps = external ? { href: link } : { as: Link, to: link };
-
     return (
       <Nav.Item className={navItemClassName} onClick={() => setShow(false)}>
         <Nav.Link {...linkProps} target={target} className={classNames}>

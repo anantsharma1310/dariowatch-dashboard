@@ -7,27 +7,35 @@ import { Col, Row, Card, Image, Button, ListGroup, ProgressBar } from '@themesbe
 import { CircleChart, BarChart, SalesValueChart, SalesValueChartphone } from "./Charts";
 import renderHTML from 'react-render-html';
 
-import Profile1 from "../assets/img/team/profile-picture-1.jpg";
-import ProfileCover from "../assets/img/profile-cover.jpg";
+import eatingHabit from "../assets/img/lifestyle/eating.webp";
+import exerciseHabit from "../assets/img/lifestyle/exercise.jpeg";
+import meditateHabit from "../assets/img/lifestyle/meditate.jpg";
+import sleepHabit from "../assets/img/lifestyle/sleep.webp";
+import workHabit from "../assets/img/lifestyle/work.webp";
+import socialHabit from "../assets/img/lifestyle/social.jpeg";
 
 import teamMembers from "../data/teamMembers";
 import './Widgets.css';
 
+const imgMap = {
+  eating: eatingHabit,
+  exercise: exerciseHabit,
+  meditate: meditateHabit,
+  sleep: sleepHabit,
+  work: workHabit,
+  social: socialHabit
+};
 
-export const ProfileCardWidget = () => {
+export const ProfileCardWidget = ({ heading, text, name }) => {
   return (
-    <Card border="light" className="text-center p-0 mb-4">
-      <div style={{ backgroundImage: `url(${ProfileCover})` }} className="profile-cover rounded-top" />
-      <Card.Body className="pb-5">
-        <Card.Img src={Profile1} alt="Neil Portrait" className="user-avatar large-avatar rounded-circle mx-auto mt-n7 mb-4" />
-        <Card.Title>Neil Sims</Card.Title>
-        <Card.Subtitle className="fw-normal">Senior Software Engineer</Card.Subtitle>
-        <Card.Text className="text-gray mb-4">New York, USA</Card.Text>
-
-        <Button variant="primary" size="sm" className="me-2">
-          <FontAwesomeIcon icon={faUserPlus} className="me-1" /> Connect
-        </Button>
-        <Button variant="secondary" size="sm">Send Message</Button>
+    <Card border="light" className="text-center p-0 mb-3 lifestyle-card">
+      <div className="lifestyle-top-container">
+      <div class="backdrop" ></div>
+        <div style={{ backgroundImage: `url(${imgMap[name]})` }} className="profile-cover rounded-top" />
+        <h3 className="lifestyle-head">{heading}</h3>
+      </div>
+      <Card.Body className="pb-5 lifestyle-text-padding">
+      <Card.Text className="text-gray mb-4">{text}</Card.Text>
       </Card.Body>
     </Card>
   );
