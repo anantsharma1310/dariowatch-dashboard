@@ -1,10 +1,17 @@
 
 .ct-series-a .ct-bar {
-    /* Colour of your bars */
     stroke:  #ff8021;
     stroke-width: 40;
     stroke-linecap: square;
     margin-bottom: 10px;
+}
+
+.ct-series-a .ct-line, .ct-series-a .ct-point, .ct-grid {
+    stroke:  #ff8021 !important;
+}
+
+.ct-series-a .ct-area {
+    fill: #ff8021;
 }
 
 .ct-label {
