@@ -128,7 +128,7 @@ export default () => {
 
   return (
     <>
-      <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+      <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4 title-style">
         <h3 className="mx-auto dario-color">{mock[type].title}</h3>
       </div>
       {renderComponent}

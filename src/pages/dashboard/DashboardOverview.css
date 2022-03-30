@@ -35,6 +35,10 @@
     margin-top: 30px;
 }
 
+.title-style {
+    padding-top: 0 !important;
+}
+
 .logout-button {
     width: 140px;
     height: 45px;
