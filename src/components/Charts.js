@@ -2,6 +2,7 @@
 import React from "react";
 import Chartist from "react-chartist";
 import ChartistTooltip from 'chartist-plugin-tooltips-updated';
+import './Charts.css';
 
 export const SalesValueChart = ({ data, type }) => {
   const options = {

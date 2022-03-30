@@ -1,0 +1,12 @@
+
+.ct-series-a .ct-bar {
+    /* Colour of your bars */
+    stroke:  #ff8021;
+    stroke-width: 40;
+    stroke-linecap: square;
+    margin-bottom: 10px;
+}
+
+.ct-label {
+    margin-top: 20px !important;
+}
