@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8657eca646b57383be24cdfe5107134f",
+    "revision": "23e1b65b57d4402e1eeb522cdd2b96d1",
     "url": "/dariowatch-dashboard/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dariowatch-dashboard/static/css/2.e0a0f005.chunk.css"
   },
   {
-    "revision": "23ff85a320b2396a3789",
-    "url": "/dariowatch-dashboard/static/css/main.68fecdb2.chunk.css"
+    "revision": "1f1fb790d26e46cb9e8c",
+    "url": "/dariowatch-dashboard/static/css/main.5d079f44.chunk.css"
   },
   {
     "revision": "e91205a2214774d99c3b",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dariowatch-dashboard/static/js/2.930db6d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "23ff85a320b2396a3789",
-    "url": "/dariowatch-dashboard/static/js/main.2f361013.chunk.js"
+    "revision": "1f1fb790d26e46cb9e8c",
+    "url": "/dariowatch-dashboard/static/js/main.d7e67764.chunk.js"
   },
   {
     "revision": "912d711aff60be6a609b",
