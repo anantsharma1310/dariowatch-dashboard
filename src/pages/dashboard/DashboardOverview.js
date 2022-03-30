@@ -84,7 +84,7 @@ const CardComponent = ({ type }) => (
 
 const SettingsComponent = ({ type }) => (
 <>
-<h3 className="notification-text">Notification settings:</h3>
+<h3 className="notification-text">Notification preferences:</h3>
 <p className="sub-text">Changing below settings will turn on/off notification in dariowatch linked to your account.</p>
 <Row>
     {mock[type].data.map(item => (
