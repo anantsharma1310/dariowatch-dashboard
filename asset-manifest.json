@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dariowatch-dashboard/static/css/main.6dc4009e.chunk.css",
+    "main.css": "/dariowatch-dashboard/static/css/main.68fecdb2.chunk.css",
     "main.js": "/dariowatch-dashboard/static/js/main.2f361013.chunk.js",
     "main.js.map": "/dariowatch-dashboard/static/js/main.2f361013.chunk.js.map",
     "runtime-main.js": "/dariowatch-dashboard/static/js/runtime-main.5c6c9c03.js",
@@ -9,10 +9,10 @@
     "static/js/2.930db6d4.chunk.js": "/dariowatch-dashboard/static/js/2.930db6d4.chunk.js",
     "static/js/2.930db6d4.chunk.js.map": "/dariowatch-dashboard/static/js/2.930db6d4.chunk.js.map",
     "index.html": "/dariowatch-dashboard/index.html",
-    "precache-manifest.89de6c242f27c7e4ea7cfe162064a329.js": "/dariowatch-dashboard/precache-manifest.89de6c242f27c7e4ea7cfe162064a329.js",
+    "precache-manifest.7edb48088821f27e6fc36754fd17ae1e.js": "/dariowatch-dashboard/precache-manifest.7edb48088821f27e6fc36754fd17ae1e.js",
     "service-worker.js": "/dariowatch-dashboard/service-worker.js",
     "static/css/2.e0a0f005.chunk.css.map": "/dariowatch-dashboard/static/css/2.e0a0f005.chunk.css.map",
-    "static/css/main.6dc4009e.chunk.css.map": "/dariowatch-dashboard/static/css/main.6dc4009e.chunk.css.map",
+    "static/css/main.68fecdb2.chunk.css.map": "/dariowatch-dashboard/static/css/main.68fecdb2.chunk.css.map",
     "static/js/2.930db6d4.chunk.js.LICENSE.txt": "/dariowatch-dashboard/static/js/2.930db6d4.chunk.js.LICENSE.txt",
     "static/media/404.svg": "/dariowatch-dashboard/static/media/404.85064a97.svg",
     "static/media/404.jpg": "/dariowatch-dashboard/static/media/404.9ba4b7cb.jpg",
@@ -65,7 +65,7 @@
     "static/js/runtime-main.5c6c9c03.js",
     "static/css/2.e0a0f005.chunk.css",
     "static/js/2.930db6d4.chunk.js",
-    "static/css/main.6dc4009e.chunk.css",
+    "static/css/main.68fecdb2.chunk.css",
     "static/js/main.2f361013.chunk.js"
   ]
 }

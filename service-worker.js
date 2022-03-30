@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dariowatch-dashboard/precache-manifest.89de6c242f27c7e4ea7cfe162064a329.js"
+  "/dariowatch-dashboard/precache-manifest.7edb48088821f27e6fc36754fd17ae1e.js"
 );
 
 self.addEventListener('message', (event) => {
