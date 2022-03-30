@@ -99,6 +99,13 @@ const SettingsComponent = ({ type }) => (
       </Col>
     ))}
   </Row>
+  <div className="logout-container">
+    <Row>
+      <Col xs={12} sm={12} xl={12} className="mb-4 d-flex justify-content-md-center">
+        <Button size="lg" variant="primary" className="logout-button">Logout</Button>
+      </Col>
+    </Row>
+  </div>
 </>
 );
 
